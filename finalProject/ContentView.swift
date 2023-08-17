@@ -9,11 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Image("EcoaidPic")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 500)
+            
+            
+            Text("Need help deciding how to be sustainable?")
+                .font(.title.bold())
+                .multilineTextAlignment(.center)
+            
+            Spacer()
+            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                Text("Yes, I have something to throw away")
+            }
+            Spacer()
+            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                Text("I want a goal to reach today")
+            }
+            Spacer()
+            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                Text("Check my progress")
+            }
+            Spacer()
         }
         .padding()
     }
